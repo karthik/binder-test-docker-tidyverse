@@ -8,5 +8,5 @@ RUN chown -R ${NB_USER} ${HOME}
 ## Become normal user again
 USER ${NB_USER}
 
-## Run an install.R script, if it exists.
+## Run an install.R script
 RUN R --quiet -e "source('install.R')";
